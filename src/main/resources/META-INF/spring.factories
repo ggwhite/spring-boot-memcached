@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=lab.ggwhite.spring.boot.support.memcached.cache.MemcachedCacheAutoConfiguration
