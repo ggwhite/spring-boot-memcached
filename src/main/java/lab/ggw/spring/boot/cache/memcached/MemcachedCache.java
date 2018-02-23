@@ -1,4 +1,4 @@
-package lab.ggwhite.spring.boot.support.memcached.cache;
+package lab.ggw.spring.boot.cache.memcached;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.locks.Lock;
@@ -10,8 +10,8 @@ import net.spy.memcached.MemcachedClient;
 
 public class MemcachedCache extends AbstractValueAdaptingCache {
 	
-	private final String KEY_SEPARATOR = ":";
-	private final String NAMESPACE = "NAMESPACE";
+	private final String KEY_SEPARATOR = MemcachedCacheDefault.KEY_SEPARATOR;
+	private final String NAMESPACE = MemcachedCacheDefault.NAMESPACE;
 	
 	private final MemcachedClient memcachedClient;
 	
@@ -38,7 +38,6 @@ public class MemcachedCache extends AbstractValueAdaptingCache {
 
 	@Override
 	protected Object lookup(Object key) {
-		System.out.println(memcachedKey(key));
 		return memcachedClient.get(memcachedKey(key));
 	}
 	
