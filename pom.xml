@@ -3,12 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>lab.ggwhite</groupId>
 	<artifactId>spring-boot-start-memcached</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spymemcached.version>2.12.3</spymemcached.version>
-		<spring.boot.version>1.5.1.RELEASE</spring.boot.version>
+		<spring.version>4.3.10.RELEASE</spring.version>
+		<spring.boot.version>1.3.0.RELEASE</spring.boot.version>
 		<lombok.version>1.16.12</lombok.version>
 	</properties>
 
@@ -17,6 +18,16 @@
 			<groupId>net.spy</groupId>
 			<artifactId>spymemcached</artifactId>
 			<version>${spymemcached.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

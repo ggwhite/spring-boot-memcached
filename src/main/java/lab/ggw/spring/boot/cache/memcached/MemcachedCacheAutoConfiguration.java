@@ -1,4 +1,4 @@
-package lab.ggwhite.spring.boot.support.memcached.cache;
+package lab.ggw.spring.boot.cache.memcached;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -18,7 +18,7 @@ import org.springframework.cache.interceptor.CacheResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import lab.ggwhite.spring.boot.support.memcached.cache.MemcachedCacheProperties.Server;
+import lab.ggw.spring.boot.cache.memcached.MemcachedCacheProperties.Server;
 import net.spy.memcached.MemcachedClient;
 
 @Configuration

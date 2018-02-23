@@ -1,4 +1,4 @@
-package lab.ggwhite.spring.boot.support.memcached.cache;
+package lab.ggw.spring.boot.cache.memcached;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 
-import lab.ggwhite.spring.boot.support.memcached.cache.MemcachedCacheProperties.CacheConfig;
+import lab.ggw.spring.boot.cache.memcached.MemcachedCacheProperties.CacheConfig;
 import net.spy.memcached.MemcachedClient;
 
 public class MemcachedCacheManager implements CacheManager, DisposableBean {

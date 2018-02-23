@@ -1,4 +1,4 @@
-package lab.ggwhite.spring.boot.support.memcached.cache;
+package lab.ggw.spring.boot.cache.memcached;
 
 import java.util.ArrayList;
 import java.util.List;
